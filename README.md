@@ -49,6 +49,15 @@ Tell your agent what you need, for example:
 - “Review this homepage and explain what to change and how. Leave the files untouched.”
 - “Recreate this page from the screenshot and add a mobile layout too.”
 
+Automatic matching is for tasks that need design judgment. Fully specified edits to existing UI belong to your agent's usual workflow, even when the request says “optimize”. You can still explicitly ask to use oil-ui for a routine edit.
+
+| Request | Expected path |
+| --- | --- |
+| “Change the list limit from 30 to 60, remove the review page limit, and add a back-to-top button using the existing style.” | Agent's usual workflow |
+| “Optimize the login page: rename the options to ‘Phone number’ and ‘Email’, and remove the specified tab bar.” | Agent's usual workflow |
+| “Redesign just this button and explore a distinctive visual treatment.” | oil-ui: design judgment is needed even for one element |
+| “Use oil-ui to replace these fixed labels.” | oil-ui's lightweight edit path, by explicit invocation |
+
 Share any brand assets, screenshots, or existing project you have. It can start without references and only asks you questions when the deliverable is unclear.
 
 ## Built-in style comparison page
